@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Pangolin&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+    background: black;
+    overflow: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+}
+
+h3 {
+    padding: 50px 0;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    position: relative;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+    align-self: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: aliceblue;
+    font-family: Pangolin;
+    font-weight: bold;
+    cursor: pointer;
+    top: 50%;
+    text-transform: uppercase;
+}
+
+.buttonBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto 35px;
+}
+
+.button1 {
+    background: linear-gradient(to right, #FF5F87, #FB0779);
+    ;
+}
+
+.button1:hover {
+    box-shadow: 0 3px 3px 0 rgb(173, 17, 17);
+    transform: translateY(-10px);
+    background: lavender;
+    border: none;
+    color: rgb(22, 6, 26);
+    font-size: large;
+}
+
+.button2 {
+    border: solid 2px rgb(85, 209, 182);
+}
+
+.button2:hover {
+    transition: ease-in 1s;
+    box-shadow: inset 300px 0 0 0 rgb(85, 209, 182);
+    color: rgb(11, 11, 15);
+}
+
+.button3 {
+    border: solid 2px rgb(205, 169, 50);
+}
+
+.button3:hover {
+    transition: 0.4s ease-in-out;
+    background: rgb(205, 169, 50);
+    color: rgb(14, 14, 17);
+}
+
+.button4 {
+    border: 2px solid aqua;
+}
+
+.button4:hover {
+    color: aqua;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+.button5 {
+    background-color: transparent;
+    border: 3px solid #ed0d54;
+    color: #f8f5f6;
+}
+
+.button5:hover {
+    animation: beats 1s infinite;
+    transition: .3s;
+}
+
+@keyframes beats {
+    0% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(.9);
+        box-shadow: 10px 10px 0 rgb(214, 28, 78, 0.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button6 {
+    border: solid 2px rgb(185, 129, 182);
+    backface-visibility: hidden;
+}
+
+.button6:hover {
+    box-shadow: 0 6px 7px -1px #ffffff;
+    transform: translateY(-15%);
+}
+
+.button7 { 
+    background: #ea0000;
+    transform: translateY(30px);
+}
+
+.button7:hover { 
+    animation:  vibrate 100ms ease-in-out;  
+    animation-iteration-count: 7;
+}
+
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.button8 {
+    border: none;
+    width: 8em;
+    height: 3.5em;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transform: translateX(-50%);
+  }
+
+.button8 span {
+    background: linear-gradient(#F9629F, #FF69B4);
+    display: inline-block;
+    position: absolute;
+    border-radius: 0.6rem;
+    width: 8em;
+    height: 3.5em;
+    transition: all .8s;
+    line-height: 60px;
+    backface-visibility: hidden;
+    text-transform: uppercase;
+  }
+
+.button8 span:nth-child(1) {
+    transform: rotateY(0deg);
+  }
+  .button8 span:nth-child(2) {
+    transform: rotateY(180deg);
+  }
+  .button8:hover span:nth-child(1) {
+    transform: rotateY(180deg);
+  }
+  .button8:hover span:nth-child(2) {
+    transform: rotateY(0deg);
+  }
+
+  .button9 {
+    border: none;
+    width: 8em;
+    height: 3.5em;
+    cursor: pointer;
+    perspective: 1000px;
+    transform: translateX(-50%);
+  }
+
+  .button9 span {
+    background: #8009b7;
+    display: inline-block;
+    position: absolute;
+    border-radius: 0.6rem;
+    width: 8em;
+    height: 3.5em;
+    transition: all .5s;
+    line-height: 60px;
+    backface-visibility: hidden;
+    text-transform: uppercase;
+    perspective: 300px;
+  }
+
+.button9 span:nth-child(1) {
+    transform: rotateX(0deg);
+  }
+
+  .button9 span:nth-child(2) {
+    transform: rotateX(180deg);
+  }
+  .button9:hover span:nth-child(1) {
+    transform: rotateX(-90deg);
+  }
+  .button9:hover span:nth-child(2) {
+    transform: rotateX(0deg);
+    background: #e70a54;
+  }
+
+.button10 {
+    background-image: linear-gradient(to right, #b015a8, #beb3bd, #8a03f9);
+    background-size: 400% 100%;
+    transition: all .5s ease-in-out;
+    transform: translateY(50%);
+}
+
+.button10:hover {
+    background-position: 100% 0;
+}
+
+.button11:hover {
+    background: #03e9f4;
+    box-shadow: 0 0 4px #03e9f4, 0 0 30px #03e9f4, 
+    0 0 40px #03e9f4, 0 0 150px #03e9f4;
+    border: none;
+}
+
+  /* MEDIA QUERIES */
+@media (max-width: 700px){
+	.buttonBox{
+		width: 50%;
+	}
+
+	.buttonBox:nth-child(even){
+		background-color: var(--even);
+    }
+
+    .buttonBox:nth-child(odd){
+		background-color: var(--odd);
+    }
+
+}
+
+@media (max-width: 420px){
+	.buttonBox{
+		width: 100%;
+	}
+
+	.buttonBox:nth-child(even){
+		background-color: var(--even)
+	}
+
+	.buttonBox:nth-child(odd){
+		background-color:var(--odd);
+	}
+
+}
